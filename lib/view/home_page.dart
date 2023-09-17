@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:my_dictionary/model/my_dictionary.dart';
 import 'package:my_dictionary/service/my_service.dart';
 
-
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -92,35 +91,43 @@ class _HomePageState extends State<HomePage> {
                               .getMeaning(word: controller.text),
                           builder: (context,
                               AsyncSnapshot<List<DictionaryModel>> snapshot) {
-                            print("Data $snapshot");
+                           
                             if (snapshot.hasData) {
                               return Expanded(
                                 child: ListView(
                                   children: List.generate(snapshot.data!.length,
                                       (index) {
                                     final data = snapshot.data![index];
-                                    return Container(
-                                      child: Column(
-                                        children: [
-                                          Container(
-                                            child: ListTile(
+                                    return Card(
+                                      elevation:
+                                          5, // Adjust the elevation as needed
+                                      margin: const EdgeInsets.all(
+                                          10.0), // Adjust margins as needed
+                                      shape: RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.circular(
+                                            10.0), // Adjust the border radius as needed
+                                      ),
+                                      color: Colors.purple.shade200,
+                                      child: Container(
+                                        padding: const EdgeInsets.all(
+                                            10.0), // Adjust padding as needed
+                                        child: Column(
+                                          children: [
+                                            ListTile(
                                               title: Text(data.word!),
                                               subtitle: Text(
                                                   data.phonetics![index].text!),
                                               trailing: IconButton(
-                                                  onPressed: () {
-                                                    final path = data
-                                                        .phonetics![index]
-                                                        .audio;
-
-                                                    playAudio("https:$path");
-                                                  },
-                                                  icon: const Icon(
-                                                      Icons.audiotrack)),
+                                                onPressed: () {
+                                                  final path = data
+                                                      .phonetics![index].audio;
+                                                  playAudio("https:$path");
+                                                },
+                                                icon: const Icon(
+                                                    Icons.audiotrack),
+                                              ),
                                             ),
-                                          ),
-                                          Container(
-                                            child: ListTile(
+                                            ListTile(
                                               title: Text(data
                                                   .meanings![index]
                                                   .definitions![index]
@@ -129,8 +136,8 @@ class _HomePageState extends State<HomePage> {
                                                   .meanings![index]
                                                   .partOfSpeech!),
                                             ),
-                                          ),
-                                        ],
+                                          ],
+                                        ),
                                       ),
                                     );
                                   }),
