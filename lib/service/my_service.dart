@@ -9,14 +9,14 @@ class DictionaryService {
     try {
       final req = await http.get(Uri.parse(url));
 
-      print(req.statusCode);
+     
       if (req.statusCode == 200) {
-        print(req.body);
+       
 
         final dictionaryModel = dictionaryModelFromJson(req.body);
         return dictionaryModel;
       } else {
-        print(req.body);
+        
         final dictionaryModel = dictionaryModelFromJson(req.body);
 
         return dictionaryModel;
