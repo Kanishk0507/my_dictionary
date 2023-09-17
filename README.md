@@ -1,16 +1,13 @@
-# my_dictionary
+# MY DICTIONARY
+ The powerful and elegant dictionary application built with Flutter! Explore a world of words and language in a beautifully designed, cross-platform app that puts a comprehensive dictionary right at your fingertips.
 
-A new Flutter project.
+# Home screen
+![IMG-20230917-WA0002](https://github.com/Kanishk0507/my_dictionary/assets/98214136/ffc664fc-b65c-47a8-bc62-f1d4f51cc0f9)
 
-## Getting Started
+# Enter a word to search
+![IMG-20230917-WA0001](https://github.com/Kanishk0507/my_dictionary/assets/98214136/1137270f-0015-41e8-a96e-6e0bc3472e02)
 
-This project is a starting point for a Flutter application.
+# Meaning displayed
+![IMG-20230917-WA0003](https://github.com/Kanishk0507/my_dictionary/assets/98214136/2e3f50f6-2813-4ac6-9d56-e1d031b15380)
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
