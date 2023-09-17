@@ -8,7 +8,6 @@
 ![IMG-20230917-WA0001](https://github.com/Kanishk0507/my_dictionary/assets/98214136/1137270f-0015-41e8-a96e-6e0bc3472e02)
 
 # Meaning displayed
-![IMG-20230917-WA0000](https://github.com/Kanishk0507/my_dictionary/assets/98214136/41628baf-6469-4251-8ba6-3f1dda8e3dc5)
-
+![IMG-20230917-WA0003](https://github.com/Kanishk0507/my_dictionary/assets/98214136/2e3f50f6-2813-4ac6-9d56-e1d031b15380)
 
 
